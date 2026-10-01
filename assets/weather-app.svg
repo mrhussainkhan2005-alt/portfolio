@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<title id="title">Weather App</title><desc id="desc">Vanilla JavaScript / Open-Meteo API</desc>
+<rect width="1200" height="800" fill="#F7F4EE"/><rect x="34" y="34" width="1132" height="732" rx="8" fill="none" stroke="#C9C2B4" stroke-width="2"/>
+<text x="86" y="112" font-family="Georgia,serif" font-size="24" letter-spacing="5" fill="#9C7A45">MOHAMMAD HUSSAIN KHAN / SELECTED WORK</text>
+<text x="86" y="335" font-family="Georgia,serif" font-size="92" fill="#232220">WEATHER</text>
+<text x="86" y="425" font-family="Arial,sans-serif" font-size="34" fill="#3B2E27">Weather App</text>
+<text x="86" y="472" font-family="Arial,sans-serif" font-size="19" fill="#5C564C">Vanilla JavaScript / Open-Meteo API</text>
+<path d="M84 620H1116M84 660H1116" stroke="#DDD5C6"/><text x="86" y="708" font-family="monospace" font-size="16" letter-spacing="3" fill="#9C7A45">PORTFOLIO / 2026</text>
+<circle cx="1048" cy="176" r="58" fill="none" stroke="#9C7A45" stroke-width="2"/><path d="M1015 176h66M1048 143v66" stroke="#9C7A45" stroke-width="2"/>
+</svg>
