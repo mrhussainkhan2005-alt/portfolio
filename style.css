@@ -833,3 +833,19 @@ input, textarea{ font: inherit; color: inherit; }
   .hero__actions{ flex-direction: column; align-items: stretch; }
   .hero__actions .btn{ width: 100%; }
 }
+
+/* -------------------- Experience & privacy notes -------------------- */
+.experience-card{
+  margin-top:44px;border:1px solid var(--color-border);border-radius:var(--radius-md);
+  background:var(--color-surface);box-shadow:var(--shadow-card);overflow:hidden;
+}
+.experience-card__top{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;padding:28px 30px;border-bottom:1px solid var(--color-border)}
+.experience-card__eyebrow,.project-card__private-note{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-text-muted)}
+.experience-card__title{margin-top:8px;font-family:var(--font-display);font-size:clamp(24px,3vw,34px);font-weight:500}
+.experience-card__company{margin-top:6px;color:var(--color-bronze-strong);font-weight:600}
+.experience-card__body{padding:26px 30px}
+.experience-card__list{display:grid;gap:12px}
+.experience-card__list li{position:relative;padding-left:20px;color:var(--color-text-muted)}
+.experience-card__list li::before{content:"";position:absolute;left:0;top:.72em;width:7px;height:1px;background:var(--color-bronze)}
+.project-card__private-note{display:block;line-height:1.6;padding-top:2px}
+@media (max-width:640px){.experience-card__top{flex-direction:column;padding:24px}.experience-card__body{padding:22px 24px}}
