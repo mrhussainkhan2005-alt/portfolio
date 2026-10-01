@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; form-action 'self' mailto:; object-src 'none'; frame-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; media-src 'none'; worker-src 'none'; manifest-src 'self'; upgrade-insecure-requests">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Mohammad Hussain Khan | Technology Portfolio</title>
@@ -48,6 +50,7 @@
     <ul class="nav__links" id="nav-links">
       <li><a href="#home" class="nav__link" data-nav-link>Home</a></li>
       <li><a href="#about" class="nav__link" data-nav-link>About</a></li>
+      <li><a href="#experience" class="nav__link" data-nav-link>Experience</a></li>
       <li><a href="#skills" class="nav__link" data-nav-link>Skills</a></li>
       <li><a href="#projects" class="nav__link" data-nav-link>Projects</a></li>
       <li><a href="#certifications" class="nav__link" data-nav-link>Certifications</a></li>
@@ -73,6 +76,7 @@
     <ul class="mobile-menu__links">
       <li><a href="#home" data-nav-link data-mobile-link>Home</a></li>
       <li><a href="#about" data-nav-link data-mobile-link>About</a></li>
+      <li><a href="#experience" data-nav-link data-mobile-link>Experience</a></li>
       <li><a href="#skills" data-nav-link data-mobile-link>Skills</a></li>
       <li><a href="#projects" data-nav-link data-mobile-link>Projects</a></li>
       <li><a href="#certifications" data-nav-link data-mobile-link>Certifications</a></li>
@@ -169,10 +173,35 @@
     </div>
   </section>
 
+  <section class="section section--alt" id="experience" aria-labelledby="experience-heading">
+    <div class="container">
+      <p class="eyebrow"><span class="eyebrow__index">N&deg; 03</span>Experience</p>
+      <h2 class="section__title" id="experience-heading">Learning through real project work</h2>
+      <p class="section__lede">Hands-on internship experience focused on frontend development, website improvement and practical delivery.</p>
+      <article class="experience-card reveal">
+        <div class="experience-card__top">
+          <div>
+            <p class="experience-card__eyebrow">Internship &middot; 2026</p>
+            <h3 class="experience-card__title">AI Web Development Intern</h3>
+            <p class="experience-card__company">InAmigos Foundation</p>
+          </div>
+          <span class="tag">Project-based</span>
+        </div>
+        <div class="experience-card__body">
+          <ul class="experience-card__list">
+            <li>Built and refined responsive NGO-focused frontend experiences using HTML, CSS and JavaScript.</li>
+            <li>Worked on website analysis, UI improvement ideas, visual consistency and responsive presentation.</li>
+            <li>Used modern design and AI-assisted development workflows while reviewing output manually for usability and quality.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <!-- ===================== SKILLS ===================== -->
   <section class="section section--alt" id="skills" aria-labelledby="skills-heading">
     <div class="container">
-      <p class="eyebrow"><span class="eyebrow__index">N&deg; 03</span>Skills</p>
+      <p class="eyebrow"><span class="eyebrow__index">N&deg; 04</span>Skills</p>
       <h2 class="section__title" id="skills-heading">Working knowledge, in progress</h2>
       <p class="section__lede">A ledger of the tools and areas I currently work with &mdash; growing with every project.</p>
 
@@ -242,11 +271,44 @@
   <!-- ===================== PROJECTS ===================== -->
   <section class="section" id="projects" aria-labelledby="projects-heading">
     <div class="container">
-      <p class="eyebrow"><span class="eyebrow__index">N&deg; 04</span>Projects</p>
+      <p class="eyebrow"><span class="eyebrow__index">N&deg; 05</span>Projects</p>
       <h2 class="section__title" id="projects-heading">Selected work</h2>
       <p class="section__lede">Practical frontend builds where I focused on structure, responsiveness and clean interaction design.</p>
 
       <div class="projects">
+
+        <article class="project-card reveal">
+          <button type="button" class="project-card__media" data-lightbox-trigger data-lightbox-src="assets/weather-app.svg" data-lightbox-alt="Preview cover for the Weather App project" aria-label="Open larger preview of Weather App project">
+            <img src="assets/weather-app.svg" alt="Weather App project preview" loading="lazy" width="1200" height="800">
+            <span class="project-card__zoom" aria-hidden="true">View image</span>
+          </button>
+          <div class="project-card__body">
+            <p class="project-card__tag">Web App</p>
+            <h3 class="project-card__title">Weather App &mdash; Vanilla JavaScript</h3>
+            <p class="project-card__desc">Responsive weather application using the Open-Meteo API with city search, browser geolocation, current conditions, a 7-day forecast and unit conversion.</p>
+            <ul class="project-card__stack" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Open-Meteo API</li></ul>
+            <div class="project-card__actions">
+              <a href="https://mrhussainkhan2005-alt.github.io/weather-app/" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="https://github.com/mrhussainkhan2005-alt/weather-app" class="btn btn--ghost btn--small" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <button type="button" class="project-card__media" data-lightbox-trigger data-lightbox-src="assets/vera-architecture.svg" data-lightbox-alt="Preview cover for the VÉRA architecture studio project" aria-label="Open larger preview of VÉRA project">
+            <img src="assets/vera-architecture.svg" alt="VÉRA architecture studio project preview" loading="lazy" width="1200" height="800">
+            <span class="project-card__zoom" aria-hidden="true">View image</span>
+          </button>
+          <div class="project-card__body">
+            <p class="project-card__tag">Studio Website</p>
+            <h3 class="project-card__title">VÉRA &mdash; Architecture &amp; Spatial Design Studio</h3>
+            <p class="project-card__desc">Premium editorial architecture website with responsive layouts, smooth navigation, reveal motion, project interactions, keyboard support and reduced-motion handling.</p>
+            <ul class="project-card__stack" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive UI</li></ul>
+            <div class="project-card__actions">
+              <a href="https://github.com/mrhussainkhan2005-alt/vera-architecture" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
 
         <article class="project-card reveal">
           <button type="button" class="project-card__media" data-lightbox-trigger data-lightbox-src="assets/nayepankh.png" data-lightbox-alt="Screenshot preview of the NayePankh Foundation website" aria-label="Open larger preview of NayePankh Foundation project image">
@@ -296,6 +358,33 @@
 </div>
           </div>
         </article>
+        <article class="project-card reveal">
+          <button type="button" class="project-card__media" data-lightbox-trigger data-lightbox-src="assets/inamigos.svg" data-lightbox-alt="Preview cover for the InAmigos internship project" aria-label="Open larger preview of InAmigos internship project">
+            <img src="assets/inamigos.svg" alt="InAmigos internship project preview" loading="lazy" width="1200" height="800">
+            <span class="project-card__zoom" aria-hidden="true">View image</span>
+          </button>
+          <div class="project-card__body">
+            <p class="project-card__tag">Internship Project</p>
+            <h3 class="project-card__title">InAmigos Foundation &mdash; NGO Awareness Website</h3>
+            <p class="project-card__desc">NGO awareness webpage focused on clear information architecture, responsive presentation, visual storytelling, project highlights and accessible calls to action.</p>
+            <ul class="project-card__stack" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive Design</li></ul>
+            <div class="project-card__actions"><span class="project-card__private-note">Internship work &middot; public repository not listed</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <button type="button" class="project-card__media" data-lightbox-trigger data-lightbox-src="assets/sk-artgallery.svg" data-lightbox-alt="Preview cover for the SK ArtGallery project" aria-label="Open larger preview of SK ArtGallery project">
+            <img src="assets/sk-artgallery.svg" alt="SK ArtGallery project preview" loading="lazy" width="1200" height="800">
+            <span class="project-card__zoom" aria-hidden="true">View image</span>
+          </button>
+          <div class="project-card__body">
+            <p class="project-card__tag">Art &amp; Commerce</p>
+            <h3 class="project-card__title">SK ArtGallery &mdash; Handmade Quilling Store</h3>
+            <p class="project-card__desc">Visual product showcase for handmade quilling artwork, focused on product presentation, responsive layout and direct customer enquiry flow.</p>
+            <ul class="project-card__stack" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive UI</li></ul>
+            <div class="project-card__actions"><span class="project-card__private-note">Project showcase &middot; link available on request</span></div>
+          </div>
+        </article>
 
       </div>
     </div>
@@ -304,7 +393,7 @@
   <!-- ===================== CERTIFICATIONS ===================== -->
   <section class="section section--alt" id="certifications" aria-labelledby="certifications-heading">
     <div class="container">
-      <p class="eyebrow"><span class="eyebrow__index">N&deg; 05</span>Certifications</p>
+      <p class="eyebrow"><span class="eyebrow__index">N&deg; 06</span>Certifications</p>
       <h2 class="section__title" id="certifications-heading">Certificates &amp; coursework</h2>
 
       <ol class="cert-ledger">
@@ -355,7 +444,7 @@
   <!-- ===================== CONTACT ===================== -->
   <section class="section" id="contact" aria-labelledby="contact-heading">
     <div class="container">
-      <p class="eyebrow"><span class="eyebrow__index">N&deg; 06</span>Contact</p>
+      <p class="eyebrow"><span class="eyebrow__index">N&deg; 07</span>Contact</p>
       <h2 class="section__title" id="contact-heading">Let&rsquo;s build something useful.</h2>
       <p class="section__lede">I&rsquo;m open to entry-level technology opportunities, internships, practical projects and opportunities to learn and grow.</p>
 
@@ -366,12 +455,6 @@
             <a class="contact__method" href="mailto:mrhussainkhan2005@gmail.com">
               <span class="contact__method-label">Email</span>
               <span class="contact__method-value">mrhussainkhan2005@gmail.com</span>
-            </a>
-          </li>
-          <li>
-            <a class="contact__method" href="tel:+919521789098">
-              <span class="contact__method-label">Phone</span>
-              <span class="contact__method-value">+91 95217 89098</span>
             </a>
           </li>
           <li>
@@ -393,17 +476,17 @@
 
           <div class="field">
             <label for="cf-name">Name</label>
-            <input type="text" id="cf-name" name="name" required autocomplete="name">
+            <input type="text" id="cf-name" name="name" required autocomplete="name" minlength="2" maxlength="80">
           </div>
 
           <div class="field">
             <label for="cf-email">Your email</label>
-            <input type="email" id="cf-email" name="email" required autocomplete="email">
+            <input type="email" id="cf-email" name="email" required autocomplete="email" maxlength="254">
           </div>
 
           <div class="field">
             <label for="cf-message">Message</label>
-            <textarea id="cf-message" name="message" rows="5" required></textarea>
+            <textarea id="cf-message" name="message" rows="5" required minlength="10" maxlength="3000"></textarea>
           </div>
 
           <button type="submit" class="btn btn--primary">Open in Email App</button>
@@ -425,6 +508,8 @@
       <li><a href="https://github.com/mrhussainkhan2005-alt" target="_blank" rel="noopener noreferrer">GitHub</a></li>
       <li><a href="https://www.linkedin.com/in/hussain-khan-001722370" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
       <li><a href="mailto:mrhussainkhan2005@gmail.com">Email</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
     </ul>
 
     <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
@@ -445,6 +530,6 @@
   </div>
 </div>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
