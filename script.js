@@ -266,8 +266,18 @@
       var email = document.getElementById("cf-email").value.trim();
       var message = document.getElementById("cf-message").value.trim();
 
-      if (!name || !email || !message) {
-        contactStatus.textContent = "Please fill in every field before sending.";
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (name.length < 2 || name.length > 80) {
+        contactStatus.textContent = "Please enter a name between 2 and 80 characters.";
+        return;
+      }
+      if (!emailPattern.test(email) || email.length > 254) {
+        contactStatus.textContent = "Please enter a valid email address.";
+        return;
+      }
+      if (message.length < 10 || message.length > 3000) {
+        contactStatus.textContent = "Please enter a message between 10 and 3000 characters.";
         return;
       }
 
